@@ -1,0 +1,172 @@
+<!DOCTYPE html "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>FarmaciaSIPUC</title>
+</head>
+<body>
+    <header class="border-flow">
+        <nav class="nav navbar-light bg-light">
+            <div class="nav-per">
+              <div>
+                <a class="navbar-brand" href="index.html">
+                    <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                </a>
+              </div> 
+              <div id="spac-titulo">
+                FarmaciaSIPUC - Farmacia do Povo
+              </div>       
+              
+            </div>
+
+            <div class="container">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="medicamentos.html">Medicamentos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="fornecedor.html">Fornecedores</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                    </li>
+                  </ul>
+            </div>
+            
+        </nav>
+        
+    </header>
+    <section class="container-section marg-top">
+        <form action="/salvar" method="post" class="row g-3">
+            <div class="disposi-respos">
+               <div class="padding" id="nome">
+                    <label class="form-label">NomeProduto</label>
+                  <input type="text" class="form-control" placeholder="Nome do Produto" aria-label="Nome do Produto">
+                </div>              
+              
+                <div class="padding" id="tipo">
+                    <label class="form-label">TipoProduto</label>
+                  <input type="text" class="form-control" placeholder="Tipo do Produto" aria-label="Tipo do Produto">
+                </div>
+                <div class="padding" id="data-final">
+                    <label class="form-label">DataFinalProcesso</label>
+                  <input type="text" class="form-control" placeholder="Data Final Processo" aria-label="Data Final Processo">
+                </div>
+              
+                <div class="padding" id="categoria">
+                    <label class="form-label">CategoriaRegulamentadora</label>
+                  <input type="text" class="form-control" placeholder="Categoria Regulamentadora" aria-label="Categoria Regulamentadora">
+                </div>
+                <div class="padding" id="numero-reg">
+                    <label class="form-label">NumeroRegistroProduto</label>
+                  <input type="text" class="form-control" placeholder="Numero Registro do Produto" aria-label="Numero Registro do Produto">
+                </div>
+              
+                <div class="padding" id="data-venci">
+                    <label class="form-label">DataVencimentoProduto</label>
+                  <input type="text" class="form-control" placeholder="Data Vencimento Produto" aria-label="Data Vencimento Produto">
+                </div>
+                <div class="padding" id="numero-processo">
+                    <label class="form-label">NumeroProcesso</label>
+                  <input type="text" class="form-control" placeholder="Numero do Processo" aria-label="Numero do Processo">
+                </div>
+              
+                <div class="padding" id="classe-Terap">
+                    <label class="form-label">ClasseTerapeutica</label>
+                  <input type="text" class="form-control" placeholder="Classe Terapeutica" aria-label="Classe Terapeutica">
+                </div>
+                <div class="padding" id="empresa">
+                    <label class="form-label">EmpresaDetentoraRegistro</label>
+                  <input type="text" class="form-control" placeholder="Empresa Detentora Registro" aria-label="Empresa Detentora Registro">
+                </div>
+              </div>
+            <div class="nav" id="format-button">
+                <input class="btn btn-primary" type="submit" value="salvar">
+                <input class="btn btn-primary" type="submit" value="Localizar">
+                <input class="btn btn-primary" type="reset" value="Apagar">
+                <input class="btn btn-primary" type="submit" value="Editar">
+            </div>
+          </form>
+
+          <div  id="over-container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="redef" scope="col"></th>
+                  <th scope="col">Id</th>
+                  <th scope="col">NomeProduto</th>
+                  <th scope="col">TipoProduto</th>
+                  <th scope="col">DataFinalProcesso</th>
+                  <th scope="col">CategoriaRegulamentadora</th>
+                  <th scope="col">NumeroRegistroProduto</th>
+                  <th scope="col">DataVencimentoProduto</th>
+                  <th scope="col">NumeroProcesso</th>
+                  <th scope="col">ClasseTerapeutica</th>
+                  <th scope="col">EmpresaDetentoraRegistro</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>                    
+                  <th scope="row"></th>
+                  <td class="redef"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                
+                  <tr>
+                    <th scope="row"></th> 
+                    <td class="redef"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  
+           
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                
+            </tbody>
+            </table>
+          </div>  
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+   
